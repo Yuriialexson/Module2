@@ -9,10 +9,13 @@ while index < len(my_list):
     compared_item = my_list[index]
     index = index + 1
     #index += 1
-    if compared_item >= 0:
+    if compared_item > 0:
         new_list.append(compared_item)
     else:
-        break
+        if compared_item == 0:
+            continue
+        else:
+            break
 print(new_list)
 
 
